@@ -26,6 +26,7 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let contentCell = tableView.dequeueReusableCell(withIdentifier: "content_cell")!
         contentCell.textLabel?.text = content[indexPath.row].name
+        contentCell.detailTextLabel?.numberOfLines = 4
         contentCell.detailTextLabel?.text = content[indexPath.row].desc
         return contentCell
     }
