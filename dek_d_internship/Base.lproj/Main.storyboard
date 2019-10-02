@@ -58,6 +58,7 @@
                                 </prototypes>
                                 <connections>
                                     <outlet property="dataSource" destination="BYZ-38-t0r" id="Ouz-Jg-CEc"/>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="vvh-oZ-NiD"/>
                                 </connections>
                             </tableView>
                         </subviews>
@@ -97,7 +98,10 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zXe-G6-DWh">
-                                <rect key="frame" x="20" y="78" width="48" height="24"/>
+                                <rect key="frame" x="20" y="78" width="335" height="24"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="335" id="g1J-aY-hlm"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -106,6 +110,7 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
                             <constraint firstItem="zXe-G6-DWh" firstAttribute="top" secondItem="3hK-Oh-tkv" secondAttribute="bottom" constant="10" id="6up-2M-nfG"/>
+                            <constraint firstItem="3Ym-Wu-ax8" firstAttribute="trailing" secondItem="zXe-G6-DWh" secondAttribute="trailing" constant="20" id="8nL-T1-XKE"/>
                             <constraint firstItem="3hK-Oh-tkv" firstAttribute="top" secondItem="3Ym-Wu-ax8" secondAttribute="top" constant="20" id="FCo-zm-qXJ"/>
                             <constraint firstItem="zXe-G6-DWh" firstAttribute="leading" secondItem="3Ym-Wu-ax8" secondAttribute="leading" constant="20" id="Yr6-xm-hve"/>
                             <constraint firstItem="3hK-Oh-tkv" firstAttribute="centerX" secondItem="GW1-9k-wWe" secondAttribute="centerX" id="cVp-m9-XyK"/>

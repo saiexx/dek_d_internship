@@ -10,9 +10,14 @@ import UIKit
 
 class ViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
     
-    var content: [Content] = [Content(name: "เฟรชชี่ปี1", desc: "เปิดวาร์ปเฟรชชี่ปี1")]
+    var content = [Content]()
     
     @IBOutlet weak var contentTableView: UITableView!
+    
+    override func viewDidLoad() {
+        content.append(Content(name: "เฟรชชี่ปี1", desc: "เปิดวาร์ปเฟรชชี่ปี1"))
+        content.append(Content(name: "โพยเตรียมสอบ", desc: #"อวดโพยเชิญทู้นี้! ส่อง"โพยเตรียมสอบ" ในวิถีเซียน ละเอียดชนิดหมูบดยังต้องยอมแพ้"#))
+    }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return content.count
